@@ -1,0 +1,493 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.jitsi.meet"
+4    android:installLocation="auto"
+5    android:versionCode="5949433"
+6    android:versionName="20.5.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="23"
+9-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml
+11    <!-- XXX ACCESS_NETWORK_STATE is required by WebRTC. -->
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+12-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-68
+13-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-65
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-65
+14-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-62
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+15-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-64
+16    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+16-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-75
+16-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-72
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+17-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-77
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-71
+18-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-68
+19    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+19-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-78
+19-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-75
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-68
+20-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:22-65
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+21-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-76
+21-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-73
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+22-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-77
+22-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:22-74
+23
+24    <uses-feature
+24-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-23:35
+25        android:glEsVersion="0x00020000"
+25-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-41
+26        android:required="true" />
+26-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-32
+27    <uses-feature
+27-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-26:36
+28        android:name="android.hardware.camera"
+28-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-47
+29        android:required="false" />
+29-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:9-33
+30    <uses-feature
+30-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-29:36
+31        android:name="android.hardware.camera.autofocus"
+31-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:9-57
+32        android:required="false" />
+32-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:9-33
+33
+34    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+34-->[:react-native-calendar-events] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-calendar-events/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-73
+34-->[:react-native-calendar-events] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-calendar-events/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-70
+35    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- To store the heap dumps and leak analysis results. -->
+35-->[:react-native-calendar-events] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-calendar-events/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-72
+35-->[:react-native-calendar-events] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-calendar-events/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-69
+36    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+36-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:23:5-80
+36-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:23:22-77
+37    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+37-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:24:5-81
+37-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:24:22-78
+38    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+38-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:5-110
+38-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
+39
+40    <application
+40-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:5:3-42:17
+41        android:allowBackup="true"
+41-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:6:7-33
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.3.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/9afcbea7cc03cc6907eaeb81fd5fb9a0/core-1.3.0/AndroidManifest.xml:24:18-86
+43        android:debuggable="true"
+44        android:extractNativeLibs="false"
+45        android:icon="@mipmap/ic_launcher"
+45-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:7:7-41
+46        android:label="@string/app_name"
+46-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:8:7-39
+47        android:networkSecurityConfig="@xml/network_security_config"
+47-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:9:7-67
+48        android:supportsRtl="true"
+48-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-35
+49        android:theme="@style/AppTheme" >
+49-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:10:7-38
+50        <meta-data
+50-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:11:5-13:52
+51            android:name="android.content.APP_RESTRICTIONS"
+51-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:12:9-56
+52            android:resource="@xml/app_restrictions" />
+52-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:13:9-49
+53
+54        <activity
+54-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:14:5-41:16
+55            android:name="org.jitsi.meet.MainActivity"
+55-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:18:9-37
+56            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+56-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:15:9-111
+57            android:label="@string/app_name"
+57-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:16:9-41
+58            android:launchMode="singleTask"
+58-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:17:9-40
+59            android:resizeableActivity="true"
+59-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:19:9-42
+60            android:supportsPictureInPicture="true"
+60-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:20:9-48
+61            android:windowSoftInputMode="adjustResize" >
+61-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:21:9-51
+62            <meta-data
+62-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:22:7-97
+63                android:name="firebase_crashlytics_collection_enabled"
+63-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:22:18-72
+64                android:value="false" />
+64-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:22:73-94
+65
+66            <intent-filter>
+66-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:23:7-26:23
+67                <action android:name="android.intent.action.MAIN" />
+67-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:24:9-61
+67-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:24:17-58
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:25:9-69
+69-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:25:19-66
+70            </intent-filter>
+71            <intent-filter>
+71-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:27:7-34:23
+72                <action android:name="android.intent.action.VIEW" />
+72-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:28:9-61
+72-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:28:17-58
+73
+74                <category android:name="android.intent.category.BROWSABLE" />
+74-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:29:9-70
+74-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:29:19-67
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:30:9-68
+75-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:30:19-65
+76
+77                <data
+77-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:9-71
+78                    android:host="alpha.jitsi.net"
+78-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:15-45
+79                    android:scheme="https" />
+79-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:46-68
+80                <data
+80-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:9-71
+81                    android:host="beta.meet.jit.si"
+81-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:15-45
+82                    android:scheme="https" />
+82-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:46-68
+83                <data
+83-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:9-71
+84                    android:host="meet.jit.si"
+84-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:15-45
+85                    android:scheme="https" />
+85-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:46-68
+86            </intent-filter>
+87            <intent-filter>
+87-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:35:7-40:23
+88                <action android:name="android.intent.action.VIEW" />
+88-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:28:9-61
+88-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:28:17-58
+89
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:29:9-70
+90-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:29:19-67
+91                <category android:name="android.intent.category.DEFAULT" />
+91-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:30:9-68
+91-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:30:19-65
+92
+93                <data android:scheme="org.jitsi.meet" />
+93-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:9-71
+93-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:31:46-68
+94            </intent-filter>
+95        </activity>
+96
+97        <service
+97-->[com.squareup.leakcanary:leakcanary-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/fb0044ceb175df3fe01874931a9dde40/jetified-leakcanary-android-2.2/AndroidManifest.xml:23:9-25:40
+98            android:name="leakcanary.internal.HeapAnalyzerService"
+98-->[com.squareup.leakcanary:leakcanary-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/fb0044ceb175df3fe01874931a9dde40/jetified-leakcanary-android-2.2/AndroidManifest.xml:24:13-67
+99            android:exported="false" />
+99-->[com.squareup.leakcanary:leakcanary-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/fb0044ceb175df3fe01874931a9dde40/jetified-leakcanary-android-2.2/AndroidManifest.xml:25:13-37
+100
+101        <activity
+101-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:9-41:58
+102            android:name="org.jitsi.meet.sdk.JitsiMeetActivity"
+102-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-64
+103            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+103-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-115
+104            android:launchMode="singleTask"
+104-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-44
+105            android:resizeableActivity="true"
+105-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-46
+106            android:supportsPictureInPicture="true"
+106-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-52
+107            android:windowSoftInputMode="adjustResize" />
+107-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-55
+108        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+108-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:9-86
+108-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:19-83
+109
+110        <service
+110-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:9-50:19
+111            android:name="org.jitsi.meet.sdk.ConnectionService"
+111-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-64
+112            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE" >
+112-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:13-84
+113            <intent-filter>
+113-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-49:29
+114                <action android:name="android.telecom.ConnectionService" />
+114-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:17-76
+114-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:25-73
+115            </intent-filter>
+116        </service>
+117        <service
+117-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:9-53:63
+118            android:name="org.jitsi.meet.sdk.JitsiMeetOngoingConferenceService"
+118-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:13-80
+119            android:foregroundServiceType="mediaProjection" />
+119-->[:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:13-60
+120
+121        <provider
+121-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+122            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+122-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+123            android:authorities="org.jitsi.meet.fileprovider"
+123-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+124            android:exported="false"
+124-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+125            android:grantUriPermissions="true" >
+125-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+126            <meta-data
+126-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+127                android:name="android.support.FILE_PROVIDER_PATHS"
+127-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+128                android:resource="@xml/file_provider_paths" />
+128-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+129        </provider>
+130
+131        <activity
+131-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+132            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+132-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+133            android:excludeFromRecents="true"
+133-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+134            android:exported="false"
+134-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+136        <!--
+137            Service handling Google Sign-In user revocation. For apps that do not integrate with
+138            Google Sign-In, this service will never be started.
+139        -->
+140        <service
+140-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+141            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+141-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+142            android:exported="true"
+142-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+143            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+143-->[com.google.android.gms:play-services-auth:16.0.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/57faaaf3a0c7f65090b4f52d14ec4c57/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+144        <service
+144-->[com.google.firebase:firebase-crashlytics:17.2.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/eadb98c4f3fdf7c964a79e5255aac57a/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:13:9-19:19
+145            android:name="com.google.firebase.components.ComponentDiscoveryService"
+145-->[com.google.firebase:firebase-crashlytics:17.2.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/eadb98c4f3fdf7c964a79e5255aac57a/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:14:13-84
+146            android:directBootAware="true"
+146-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:35:13-43
+147            android:exported="false" >
+147-->[com.google.firebase:firebase-crashlytics:17.2.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/eadb98c4f3fdf7c964a79e5255aac57a/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:15:13-37
+148            <meta-data
+148-->[com.google.firebase:firebase-crashlytics:17.2.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/eadb98c4f3fdf7c964a79e5255aac57a/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:16:13-18:85
+149                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+149-->[com.google.firebase:firebase-crashlytics:17.2.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/eadb98c4f3fdf7c964a79e5255aac57a/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:17:17-115
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-crashlytics:17.2.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/eadb98c4f3fdf7c964a79e5255aac57a/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:18:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-dynamic-links:19.1.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/795c3510da1ce9cb1091e26303d486b1/jetified-firebase-dynamic-links-19.1.0/AndroidManifest.xml:9:13-11:85
+152                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+152-->[com.google.firebase:firebase-dynamic-links:19.1.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/795c3510da1ce9cb1091e26303d486b1/jetified-firebase-dynamic-links-19.1.0/AndroidManifest.xml:10:17-133
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-dynamic-links:19.1.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/795c3510da1ce9cb1091e26303d486b1/jetified-firebase-dynamic-links-19.1.0/AndroidManifest.xml:11:17-82
+154            <meta-data
+154-->[com.google.android.gms:play-services-measurement-api:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b86f45e21506d00e929774f1863db113/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:30:13-32:85
+155                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+155-->[com.google.android.gms:play-services-measurement-api:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b86f45e21506d00e929774f1863db113/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:31:17-139
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.android.gms:play-services-measurement-api:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b86f45e21506d00e929774f1863db113/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:32:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-installations:16.3.3] /home/gibraan/.gradle/caches/transforms-2/files-2.1/42d499f944563e057f906d42424bdd35/jetified-firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+158                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+158-->[com.google.firebase:firebase-installations:16.3.3] /home/gibraan/.gradle/caches/transforms-2/files-2.1/42d499f944563e057f906d42424bdd35/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-installations:16.3.3] /home/gibraan/.gradle/caches/transforms-2/files-2.1/42d499f944563e057f906d42424bdd35/jetified-firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+160        </service>
+161
+162        <provider
+162-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:29:9-37:20
+163            android:name="leakcanary.internal.LeakCanaryFileProvider"
+163-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:30:13-70
+164            android:authorities="com.squareup.leakcanary.fileprovider.org.jitsi.meet"
+164-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:31:13-88
+165            android:exported="false"
+165-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:32:13-37
+166            android:grantUriPermissions="true" >
+166-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:33:13-47
+167            <meta-data
+167-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+168                android:name="android.support.FILE_PROVIDER_PATHS"
+168-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+169                android:resource="@xml/leak_canary_file_paths" />
+169-->[:react-native-webview] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+170        </provider>
+171
+172        <activity
+172-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:39:9-44:66
+173            android:name="leakcanary.internal.activity.LeakActivity"
+173-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:40:13-69
+174            android:icon="@mipmap/leak_canary_icon"
+174-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:41:13-52
+175            android:label="@string/leak_canary_display_activity_label"
+175-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:42:13-71
+176            android:taskAffinity="com.squareup.leakcanary.org.jitsi.meet"
+176-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:43:13-76
+177            android:theme="@style/leak_canary_LeakCanary.Base" />
+177-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:44:13-63
+178
+179        <activity-alias
+179-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:46:9-62:26
+180            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+180-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:47:13-77
+181            android:banner="@drawable/leak_canary_tv_icon"
+181-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:48:13-59
+182            android:enabled="@bool/leak_canary_add_launcher_icon"
+182-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:49:13-66
+183            android:icon="@mipmap/leak_canary_icon"
+183-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:50:13-52
+184            android:label="@string/leak_canary_display_activity_label"
+184-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:51:13-71
+185            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+185-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:52:13-79
+186            android:taskAffinity="com.squareup.leakcanary.org.jitsi.meet"
+186-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:53:13-76
+187            android:theme="@style/leak_canary_LeakCanary.Base" >
+187-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:54:13-63
+188            <intent-filter>
+188-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:55:13-61:29
+189                <action android:name="android.intent.action.MAIN" />
+189-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:24:9-61
+189-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:24:17-58
+190
+191                <category android:name="android.intent.category.LAUNCHER" />
+191-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:25:9-69
+191-->/home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:25:19-66
+192                <!-- Android TV launcher intent -->
+193                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+193-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:60:17-86
+193-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:60:27-83
+194            </intent-filter>
+195        </activity-alias>
+196
+197        <activity
+197-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:64:9-70:68
+198            android:name="leakcanary.internal.RequestStoragePermissionActivity"
+198-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:65:13-80
+199            android:excludeFromRecents="true"
+199-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:66:13-46
+200            android:icon="@mipmap/leak_canary_icon"
+200-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:67:13-52
+201            android:label="@string/leak_canary_storage_permission_activity_label"
+201-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:68:13-82
+202            android:taskAffinity="com.squareup.leakcanary.org.jitsi.meet"
+202-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:69:13-76
+203            android:theme="@style/leak_canary_Theme.Transparent" />
+203-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:70:13-65
+204
+205        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+205-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:72:9-77
+205-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/6a85a0e81e6f0232ef58d196354eb013/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:72:19-74
+206
+207        <provider
+207-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/3f99ffe58f81c9d3dc6d802558fc4dff/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:8:9-11:40
+208            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
+208-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/3f99ffe58f81c9d3dc6d802558fc4dff/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:9:13-79
+209            android:authorities="org.jitsi.meet.leakcanary-installer"
+209-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/3f99ffe58f81c9d3dc6d802558fc4dff/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:10:13-72
+210            android:exported="false" />
+210-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/3f99ffe58f81c9d3dc6d802558fc4dff/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:11:13-37
+211
+212        <activity
+212-->[com.google.android.gms:play-services-base:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/e511266f9136e992c042c3692f0b2156/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+213            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+213-->[com.google.android.gms:play-services-base:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/e511266f9136e992c042c3692f0b2156/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+214            android:exported="false"
+214-->[com.google.android.gms:play-services-base:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/e511266f9136e992c042c3692f0b2156/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[com.google.android.gms:play-services-base:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/e511266f9136e992c042c3692f0b2156/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+216
+217        <receiver
+217-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:29:9-33:20
+218            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+218-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:30:13-85
+219            android:enabled="true"
+219-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:31:13-35
+220            android:exported="false" >
+220-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:32:13-37
+221        </receiver>
+222
+223        <service
+223-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:35:9-38:40
+224            android:name="com.google.android.gms.measurement.AppMeasurementService"
+224-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:36:13-84
+225            android:enabled="true"
+225-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:37:13-35
+226            android:exported="false" />
+226-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:38:13-37
+227        <service
+227-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:39:9-43:72
+228            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+228-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:40:13-87
+229            android:enabled="true"
+229-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:41:13-35
+230            android:exported="false"
+230-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:42:13-37
+231            android:permission="android.permission.BIND_JOB_SERVICE" />
+231-->[com.google.android.gms:play-services-measurement:17.5.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/b27ed4897456b0e09918e12bcd605842/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:43:13-69
+232
+233        <provider
+233-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:26:9-31:39
+234            android:name="com.google.firebase.provider.FirebaseInitProvider"
+234-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:27:13-77
+235            android:authorities="org.jitsi.meet.firebaseinitprovider"
+235-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:28:13-72
+236            android:directBootAware="true"
+236-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:29:13-43
+237            android:exported="false"
+237-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:30:13-37
+238            android:initOrder="100" />
+238-->[com.google.firebase:firebase-common:19.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/440542da5e3c08b5d1658f435d27ed09/jetified-firebase-common-19.3.1/AndroidManifest.xml:31:13-36
+239
+240        <meta-data
+240-->[com.google.android.gms:play-services-basement:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ba14453cf9a455e1768edb02be833870/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+241            android:name="com.google.android.gms.version"
+241-->[com.google.android.gms:play-services-basement:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ba14453cf9a455e1768edb02be833870/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+242            android:value="@integer/google_play_services_version" />
+242-->[com.google.android.gms:play-services-basement:17.0.0] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ba14453cf9a455e1768edb02be833870/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+243
+244        <service
+244-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/a3bc5508b17e3c753941b085460fc3f1/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:29:9-35:19
+245            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+245-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/a3bc5508b17e3c753941b085460fc3f1/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:30:13-103
+246            android:exported="false" >
+246-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/a3bc5508b17e3c753941b085460fc3f1/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:31:13-37
+247            <meta-data
+247-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/a3bc5508b17e3c753941b085460fc3f1/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:32:13-34:39
+248                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+248-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/a3bc5508b17e3c753941b085460fc3f1/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:33:17-94
+249                android:value="cct" />
+249-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /home/gibraan/.gradle/caches/transforms-2/files-2.1/a3bc5508b17e3c753941b085460fc3f1/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:34:17-36
+250        </service>
+251        <service
+251-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:26:9-30:19
+252            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+252-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:27:13-117
+253            android:exported="false"
+253-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:28:13-37
+254            android:permission="android.permission.BIND_JOB_SERVICE" >
+254-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:29:13-69
+255        </service>
+256
+257        <receiver
+257-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:32:9-34:40
+258            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+258-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:33:13-132
+259            android:exported="false" />
+259-->[com.google.android.datatransport:transport-runtime:2.2.4] /home/gibraan/.gradle/caches/transforms-2/files-2.1/ab24aaabe2577a1eca173653c622bd76/jetified-transport-runtime-2.2.4/AndroidManifest.xml:34:13-37
+260    </application>
+261
+262</manifest>

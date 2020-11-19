@@ -28,6 +28,9 @@ import ScreenSharingButton from './ScreenSharingButton.js';
 import ToggleCameraButton from './ToggleCameraButton';
 import styles from './styles';
 
+// Import added by Gibraan Jafar
+import Participants from './Participants';
+
 /**
  * The type of the React {@code Component} props of {@link OverflowMenu}.
  */
@@ -128,6 +131,7 @@ class OverflowMenu extends PureComponent<Props, State> {
                 onCancel = { this._onCancel }
                 onSwipe = { this._onSwipe }
                 renderHeader = { this._renderMenuExpandToggle }>
+                <Participants { ...buttonProps } />
                 <AudioRouteButton { ...buttonProps } />
                 <InviteButton { ...buttonProps } />
                 <AudioOnlyButton { ...buttonProps } />
