@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.jitsi.meet"
     android:installLocation="auto"
-    android:versionCode="5949433"
+    android:versionCode="5981250"
     android:versionName="20.5.0" >
 
     <uses-sdk

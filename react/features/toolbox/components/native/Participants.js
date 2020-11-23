@@ -5,8 +5,8 @@ import { connect } from '../../../base/redux';
 import { AbstractButton, type AbstractButtonProps } from '../../../base/toolbox/components';
 import { IconParticipants } from '../../../base/icons';
 
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+//import { createAppContainer } from 'react-navigation';
+//import { createStackNavigator } from 'react-navigation-stack';
 
 class ParticipantsButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.participants';
@@ -23,7 +23,7 @@ class ParticipantsButton extends AbstractButton<Props, *> {
     _handleClick() {
         //this.props.dispatch(toggleAudioOnly();
         //navigation.navigate('')
-        
+        console.log("Open Participants modal");
     }
 }
 
