@@ -40,6 +40,15 @@ import java.net.URL;
 import java.util.Collection;
 import java.util.Map;
 
+
+/* Added below imports according to 
+    https://github.com/software-mansion/react-native-gesture-handler/issues/676
+   to fix the TypeError: null is not an object
+*/ 
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+//import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
 /**
  * The one and only Activity that the Jitsi Meet app needs. The
  * {@code Activity} is launched in {@code singleTask} mode, so it will be
@@ -74,6 +83,22 @@ public class MainActivity extends JitsiMeetActivity {
      * Default URL as could be obtained from RestrictionManager
      */
     private String defaultURL;
+
+
+    /* Added below nested @Override things to overcome the TypeError 
+       but it causes new error 
+    */
+    /*@Override
+    protected ReactActivityDelegate createReactActivityDelegate() {
+        return new ReactActivityDelegate(this, getMainComponentName()) {
+        @Override
+        protected ReactRootView createRootView() {
+                return new RNGestureHandlerEnabledRootView(MainActivity.this);
+            }
+        };
+    }*/
+
+
 
 
     // JitsiMeetActivity overrides

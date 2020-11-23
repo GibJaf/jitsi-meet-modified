@@ -5,6 +5,10 @@ import { connect } from '../../../base/redux';
 import { AbstractButton, type AbstractButtonProps } from '../../../base/toolbox/components';
 import { IconParticipants } from '../../../base/icons';
 
+import React from 'react';
+import { Modal, Text } from 'react-native';
+
+// Get TypeError on uncommenting below 2 imports
 //import { createAppContainer } from 'react-navigation';
 //import { createStackNavigator } from 'react-navigation-stack';
 
@@ -23,11 +27,13 @@ class ParticipantsButton extends AbstractButton<Props, *> {
     _handleClick() {
         //this.props.dispatch(toggleAudioOnly();
         //navigation.navigate('')
-        console.log("Open Participants modal");
+        console.log("Go to a new screen or open a modal \n ",this.props);
+        this.props.onModalOpen();
     }
 }
 
 function _mapStateToProps(state, ownProps): Object {
+    console.log("When is this executed ?");
     return {
             
     };

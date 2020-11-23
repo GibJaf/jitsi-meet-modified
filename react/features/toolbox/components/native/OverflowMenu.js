@@ -1,7 +1,7 @@
 // @flow
 
 import React, { PureComponent } from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, View, Modal, FlatList, Text } from 'react-native';
 import Collapsible from 'react-native-collapsible';
 
 import { ColorSchemeRegistry } from '../../../base/color-scheme';
@@ -30,6 +30,9 @@ import styles from './styles';
 
 // Import added by Gibraan Jafar
 import Participants from './Participants';
+//import { FlatList } from 'react-native-gesture-handler';
+
+const PARTICIPANTS = ["abc", "def", "ghi", "jkl"];
 
 /**
  * The type of the React {@code Component} props of {@link OverflowMenu}.
@@ -67,7 +70,9 @@ type State = {
     /**
      * True if the 'more' button set needas to be rendered.
      */
-    showMore: boolean
+    showMore: boolean,
+
+    isParticipantModelVisible: boolean
 }
 
 /**
@@ -94,7 +99,8 @@ class OverflowMenu extends PureComponent<Props, State> {
 
         this.state = {
             scrolledToTop: true,
-            showMore: false
+            showMore: false,
+            isParticipantModelVisible: false
         };
 
         // Bind event handlers so they are only bound once per instance.
@@ -102,6 +108,7 @@ class OverflowMenu extends PureComponent<Props, State> {
         this._onSwipe = this._onSwipe.bind(this);
         this._onToggleMenu = this._onToggleMenu.bind(this);
         this._renderMenuExpandToggle = this._renderMenuExpandToggle.bind(this);
+        this._onModalOpen = this._onModalOpen.bind(this);
     }
 
     /**
@@ -110,10 +117,19 @@ class OverflowMenu extends PureComponent<Props, State> {
      * @inheritdoc
      * @returns {ReactElement}
      */
+
+    _onModalOpen() {
+        console.log("\n This should open the modal");
+        this.setState({ isParticipantModelVisible: true }, () => {
+            console.log(" callback after this should open the modal ", this.state);
+        })
+    }
+
     render() {
         const { _bottomSheetStyles } = this.props;
-        const { showMore } = this.state;
+        const { showMore, isParticipantModelVisible } = this.state;
 
+        console.log(" Inside render => ", isParticipantModelVisible);
         const buttonProps = {
             afterClick: this._onCancel,
             showLabel: true,
@@ -127,31 +143,58 @@ class OverflowMenu extends PureComponent<Props, State> {
         };
 
         return (
-            <BottomSheet
-                onCancel = { this._onCancel }
-                onSwipe = { this._onSwipe }
-                renderHeader = { this._renderMenuExpandToggle }>
-                <Participants { ...buttonProps } />
-                <AudioRouteButton { ...buttonProps } />
-                <InviteButton { ...buttonProps } />
-                <AudioOnlyButton { ...buttonProps } />
-                <RaiseHandButton { ...buttonProps } />
-                <LobbyModeButton { ...buttonProps } />
-                <ScreenSharingButton { ...buttonProps } />
-                <MoreOptionsButton { ...moreOptionsButtonProps } />
-                <Collapsible collapsed = { !showMore }>
-                    <ToggleCameraButton { ...buttonProps } />
-                    <TileViewButton { ...buttonProps } />
-                    <RecordButton { ...buttonProps } />
-                    <LiveStreamButton { ...buttonProps } />
-                    <VideoShareButton { ...buttonProps } />
-                    <RoomLockButton { ...buttonProps } />
-                    <ClosedCaptionButton { ...buttonProps } />
-                    <SharedDocumentButton { ...buttonProps } />
-                    <MuteEveryoneButton { ...buttonProps } />
-                    <HelpButton { ...buttonProps } />
-                </Collapsible>
-            </BottomSheet>
+            <>
+                {isParticipantModelVisible ? <Modal
+                    animationType={"slide"}
+                    transparent={false}
+                    visible={isParticipantModelVisible}
+                    // style={{
+                    //     backgroundColor: "#000",
+                    //     flex: 1,
+                    //     justifyContent: "center",
+                    //     alignItems: "center"
+                    // }}
+                //onRequestClose = {() => this.setState({isParticipantModelVisible: false})}
+                >
+
+                    <View 
+                        style={{
+                            backgroundColor: "red",
+                            flex: 1,
+                            justifyContent: "center",
+                            alignItems: "center"
+                        }}
+                    >
+                        <Text> SOME RANDOM TEXT</Text>
+                    </View>  
+
+                </Modal> : null}
+                <BottomSheet
+                    onCancel={this._onCancel}
+                    onSwipe={this._onSwipe}
+                    renderHeader={this._renderMenuExpandToggle}>
+                    <Participants {...buttonProps} onModalOpen={this._onModalOpen} />
+                    <AudioRouteButton {...buttonProps} />
+                    <InviteButton {...buttonProps} />
+                    <AudioOnlyButton {...buttonProps} />
+                    <RaiseHandButton {...buttonProps} />
+                    <LobbyModeButton {...buttonProps} />
+                    <ScreenSharingButton {...buttonProps} />
+                    <MoreOptionsButton {...moreOptionsButtonProps} />
+                    <Collapsible collapsed={!showMore}>
+                        <ToggleCameraButton {...buttonProps} />
+                        <TileViewButton {...buttonProps} />
+                        <RecordButton {...buttonProps} />
+                        <LiveStreamButton {...buttonProps} />
+                        <VideoShareButton {...buttonProps} />
+                        <RoomLockButton {...buttonProps} />
+                        <ClosedCaptionButton {...buttonProps} />
+                        <SharedDocumentButton {...buttonProps} />
+                        <MuteEveryoneButton {...buttonProps} />
+                        <HelpButton {...buttonProps} />
+                    </Collapsible>
+                </BottomSheet>
+            </>
         );
     }
 
@@ -165,13 +208,13 @@ class OverflowMenu extends PureComponent<Props, State> {
     _renderMenuExpandToggle() {
         return (
             <View
-                style = { [
+                style={[
                     this.props._bottomSheetStyles.sheet,
                     styles.expandMenuContainer
-                ] }>
-                <TouchableOpacity onPress = { this._onToggleMenu }>
-                    { /* $FlowFixMeProps */ }
-                    <IconDragHandle style = { this.props._bottomSheetStyles.expandIcon } />
+                ]}>
+                <TouchableOpacity onPress={this._onToggleMenu}>
+                    { /* $FlowFixMeProps */}
+                    <IconDragHandle style={this.props._bottomSheetStyles.expandIcon} />
                 </TouchableOpacity>
             </View>
         );
@@ -208,18 +251,18 @@ class OverflowMenu extends PureComponent<Props, State> {
         const { showMore } = this.state;
 
         switch (direction) {
-        case 'up':
-            !showMore && this.setState({
-                showMore: true
-            });
+            case 'up':
+                !showMore && this.setState({
+                    showMore: true
+                });
 
-            return !showMore;
-        case 'down':
-            showMore && this.setState({
-                showMore: false
-            });
+                return !showMore;
+            case 'down':
+                showMore && this.setState({
+                    showMore: false
+                });
 
-            return showMore;
+                return showMore;
         }
     }
 
