@@ -49,6 +49,10 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 //import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
+/* Below import was added by Gibraan Jafar on 25th Nov 2020 according to 
+* https://github.com/oblador/react-native-vector-icons */
+import com.oblador.vectoricons.VectorIconsPackage;
+
 /**
  * The one and only Activity that the Jitsi Meet app needs. The
  * {@code Activity} is launched in {@code singleTask} mode, so it will be
@@ -85,7 +89,7 @@ public class MainActivity extends JitsiMeetActivity {
     private String defaultURL;
 
 
-    /* Added below nested @Override things to overcome the TypeError 
+    /* below nested @Override things were added by Gibraan Jafar on 23rd Nov 2020 to overcome the TypeError 
        but it causes new error 
     */
     /*@Override

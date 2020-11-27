@@ -92,6 +92,10 @@ dependencies {
     }
 
     implementation project(':sdk')
+
+    /* below line added by Gibraan Jafar on 25th Nov 2020 according to 
+    react-native-vector-icons guide at : https://github.com/oblador/react-native-vector-icons */
+    compile project(':react-native-vector-icons')
 }
 
 gradle.projectsEvaluated {
@@ -173,3 +177,7 @@ gradle.projectsEvaluated {
 if (googleServicesEnabled) {
     apply plugin: 'com.google.gms.google-services'
 }
+
+
+// added below line to use react-native-vector-icons
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"

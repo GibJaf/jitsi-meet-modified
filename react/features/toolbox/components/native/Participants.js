@@ -27,13 +27,13 @@ class ParticipantsButton extends AbstractButton<Props, *> {
     _handleClick() {
         //this.props.dispatch(toggleAudioOnly();
         //navigation.navigate('')
-        console.log("Go to a new screen or open a modal \n ",this.props);
+        // console.log("Go to a new screen or open a modal \n ",this.props);
         this.props.onModalOpen();
     }
 }
 
 function _mapStateToProps(state, ownProps): Object {
-    console.log("When is this executed ?");
+    // console.log("This is executed when 3 vertical dots are clicked to open the BottomSheet");
     return {
             
     };

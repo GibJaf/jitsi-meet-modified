@@ -4,6 +4,7 @@ ADDED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/Android
 INJECTED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:1:1-43:12
 INJECTED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:1:1-43:12
 INJECTED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml:1:1-43:12
+MERGED from [:react-native-vector-icons] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/fb0044ceb175df3fe01874931a9dde40/jetified-leakcanary-android-2.2/AndroidManifest.xml:17:1-28:12
 MERGED from [:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-56:12
 MERGED from [:react-native-google-signin] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -250,6 +251,8 @@ uses-sdk
 INJECTED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/gibraan/Winjit/jitsi-meet-modified/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/gibraan/Winjit/jitsi-meet-modified/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/fb0044ceb175df3fe01874931a9dde40/jetified-leakcanary-android-2.2/AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.2] /home/gibraan/.gradle/caches/transforms-2/files-2.1/fb0044ceb175df3fe01874931a9dde40/jetified-leakcanary-android-2.2/AndroidManifest.xml:20:5-44
 MERGED from [:sdk] /home/gibraan/Winjit/jitsi-meet-modified/android/sdk/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41

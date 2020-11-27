@@ -97,6 +97,8 @@ class SpeakerStats extends Component<Props, State> {
     render() {
         const userIds = Object.keys(this.state.stats);
         const items = userIds.map(userId => this._createStatsItem(userId));
+        console.log("\n From SpeakerStats userIds => ",userIds);
+        console.log("\n From SpeakerStats items => ",userIds);
 
         return (
             <Dialog

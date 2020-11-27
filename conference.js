@@ -1033,6 +1033,7 @@ export default {
      * speaker.
      */
     getSpeakerStats() {
+        console.log("\n From conference.js line 1036 => \n",room.getSpeakerStats,"\n");
         return room.getSpeakerStats();
     },
 
