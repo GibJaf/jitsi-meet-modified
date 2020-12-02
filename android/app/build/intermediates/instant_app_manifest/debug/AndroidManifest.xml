@@ -3,7 +3,7 @@
     package="org.jitsi.meet"
     android:installLocation="auto"
     android:targetSandboxVersion="2"
-    android:versionCode="6017522"
+    android:versionCode="6058714"
     android:versionName="20.5.0" >
 
     <uses-sdk
